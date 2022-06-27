@@ -1,0 +1,32 @@
+@use "sass:color";
+
+$small: 576px;
+$medium: 768px;
+
+@mixin layout($color, $size:14px){
+  color: $color;
+  background-color: color.adjust(color.invert($color), $lightness:20%);
+  font-size: $size;
+  margin:$size;
+  padding:$size;
+  line-height: $size*1.5;
+  border: 5px solid $color;
+}
+
+*{
+  font-family: verdana, sans-serif;
+  #container{
+    @include layout(darkred);
+  }
+}
+
+@media screen and (min-width:$small){
+  #container{
+    @include layout(darkblue,16px);
+  }
+}
+@media screen and (min-width:$medium){
+  #container{
+    @include layout(darkgreen, 20px);
+  }
+}

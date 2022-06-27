@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Gotu&display=swap");
+* {
+  line-height: 1.5rem;
+  font-family: "gotu", sans-serif;
+  box-sizing: border-box;
+}
+
+#container {
+  max-width: 800px;
+  margin: auto;
+}
+#container h1 {
+  color: #03304c;
+}
+#container nav ul li {
+  list-style-type: none;
+  display: flex;
+  text-align: center;
+}
+#container nav ul li a {
+  flex: 1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: lightskyblue;
+  outline-color: #03304c;
+  transition: all 1s;
+}
+#container nav ul li a:hover {
+  font-weight: bold;
+  color: lightskyblue;
+  background-color: #03304c;
+}
+
+@media screen and (min-width: 650px) {
+  nav ul {
+    display: flex;
+  }
+  nav ul li {
+    flex: 1;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

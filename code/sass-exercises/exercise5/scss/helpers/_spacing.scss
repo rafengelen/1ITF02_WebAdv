@@ -1,0 +1,54 @@
+@for $i from 0 through 5{
+  .mx-#{$i}{
+    margin-left: ($i/3)rem;
+    margin-right: ($i/3)rem;
+  }
+  .my-#{$i}{
+    margin-top: ($i/3)rem;
+    margin-bottom: ($i/3)rem;
+  }
+
+  .mt-#{$i}{
+    margin-top: ($i/3)rem;
+  }
+
+  .mb-#{$i}{
+    margin-bottom: ($i/3)rem;
+  }
+
+  .ml-#{$i}{
+    margin-left: ($i/3)rem;
+  }
+
+  .mr-#{$i}{
+    margin-right: ($i/3)rem;
+  }
+
+
+  //padding
+
+  .px-#{$i}{
+    margin-left: ($i/3)rem;
+    margin-right: ($i/3)rem;
+  }
+  .py-#{$i}{
+    margin-top: ($i/3)rem;
+    margin-bottom: ($i/3)rem;
+  }
+
+  .pt-#{$i}{
+    margin-top: ($i/3)rem;
+  }
+
+  .pb-#{$i}{
+    margin-bottom: ($i/3)rem;
+  }
+
+  .pl-#{$i}{
+    margin-left: ($i/3)rem;
+  }
+
+  .pr-#{$i}{
+    margin-right: ($i/3)rem;
+  }
+}

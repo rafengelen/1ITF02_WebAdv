@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  line-height: 1.5;
+}
+
+main, footer {
+  padding: 0 1rem;
+}
+
+h1 {
+  color: #cf649a;
+  background-color: inherit;
+}
+
+h1, p, ul {
+  margin-bottom: 1rem;
+}
+
+li {
+  margin-left: 2rem;
+}
+
+/*# sourceMappingURL=style.css.map */

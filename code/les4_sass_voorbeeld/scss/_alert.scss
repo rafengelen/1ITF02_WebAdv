@@ -1,0 +1,15 @@
+@use "sass:color";
+
+.alert {
+  border: 1px solid #000;
+  padding: 1rem;
+  border-radius: .5rem;
+
+  @each $key, $value in $color-map {
+    &-#{$key} {
+      border-color: $value;
+      color: color.scale($value, $lightness:-50%);
+      background-color: color.scale($value, $lightness:90%);
+    }
+  }
+}

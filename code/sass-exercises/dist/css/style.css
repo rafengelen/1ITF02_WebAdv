@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Gotu&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  line-height: 1.5rem;
+}
+
+#container {
+  max-width: 800px;
+  margin: auto;
+}
+#container h1 {
+  color: #0875b9;
+}
+
+/*# sourceMappingURL=style.css.map */

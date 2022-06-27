@@ -1,0 +1,23 @@
+{
+  "name": "les4",
+  "version": "1.0.0",
+  "description": "SASS",
+  "main": "index.js",
+  "homepage": "https://github.com/owner/les1#readme",
+  "license": "MIT",
+  "keywords": [],
+  "scripts": {
+    "server": "cd ./dist && live-server --port=9009",
+    "sass": "sass scss:dist --watch"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "echo '[Husky] pre-commit triggered'",
+      "pre-push": "echo '[Husky] pre-push triggered'"
+    }
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}

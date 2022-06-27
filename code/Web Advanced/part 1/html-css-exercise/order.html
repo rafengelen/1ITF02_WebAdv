@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expect more food - Order</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="manifest" href="/icons/site.webmanifest">
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-secondary">
+<div class="container px-0 bg-light min-vh-100 d-flex flex-column">
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="#">Expect M<i class="text-primary fa-solid fa-utensils"></i>RE food</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="order.html">Order</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<main class="flex-grow-1 px-3">
+    <h1 class="text-center text-primary pb-5">Place your order!</h1>
+    <p>No cookies are used on this site. Expect MORE food ensures the security
+        and protection of the personal information that you submit via the form below.</p>
+
+
+    <form action="https://it-fact.be/form.php" method="post" class="row g-3">
+        <!--Insert your form here    -->
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="nameInput" placeholder="Name" required>
+            <label for="nameInput">Name</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="mailInput" placeholder="name@examp" required>
+            <label for="mailInput">E-mail</label>
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="tel" class="form-control" id="telInput" placeholder="0412345678" required pattern="(0\d\/\d{7}|0\d{2}\/\d{6})$">
+            <label for="telInput">Phone</label>
+        </div>
+        <div class="form-floating mb-3">
+            <select class="form-select" id="foodInput" aria-label="Floating label select example">
+                <option selected>select your favorite food</option>
+                <option value="pizza">Pizza (€ 7,95)</option>
+                <option value="sandwich">Sandwich (€ 3,95)</option>
+                <option value="salad">Salad (€ 5,95)</option>
+            </select>
+            <label for="foodInput">Food</label>
+        </div>
+
+<fieldset>
+    <legend>Payment</legend>
+
+    <div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="bank">
+            <label class="form-check-label" for="bank">
+                Bank card
+            </label>
+        </div>
+
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="bill">
+            <label class="form-check-label" for="bill">
+                Student bill
+            </label>
+        </div>
+    </div>
+
+</fieldset>
+
+
+        <div class="my-3">
+
+            <button type="button" class="btn btn-primary" id>Submit form</button>
+
+            <button type="button" class="btn btn-secondary">Clear values</button>
+        </div>
+    </form>
+
+
+</main>
+    <footer class="bg-dark text-light text-center">
+        <p class="m-3"><i class="fa-solid fa-copyright"></i> Expect M<i class="text-primary fa-solid fa-utensils"></i>RE food - 2022</p>
+    </footer>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
